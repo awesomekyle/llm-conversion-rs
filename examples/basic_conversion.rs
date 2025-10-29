@@ -49,7 +49,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 {
                     "type": "image_url",
                     "image_url": {
-                        "url": "data:image/jpeg;base64,/9j/4AAQSkZJRg...",
+                        "url": "https://example.com/image.jpg",
                         "detail": "high"
                     }
                 }
