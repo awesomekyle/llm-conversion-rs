@@ -1,0 +1,19 @@
+[package]
+name = "llm_conversion"
+version = "0.1.0"
+edition = "2021"
+authors = ["LLM Conversion Contributors"]
+description = "Rust implementation of llm-bridge - Universal Translation Layer for Large Language Model APIs"
+license = "MIT"
+repository = "https://github.com/awesomekyle/llm-conversion-rs"
+keywords = ["llm", "openai", "anthropic", "google", "ai"]
+categories = ["api-bindings", "parsing"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+
+[dev-dependencies]
+# For testing against the upstream llm-bridge
+assert-json-diff = "2.0"

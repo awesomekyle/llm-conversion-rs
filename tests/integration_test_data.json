@@ -1,0 +1,603 @@
+{
+  "openai_basic": {
+    "provider": "openai",
+    "input": {
+      "model": "gpt-4",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a helpful assistant"
+        },
+        {
+          "role": "user",
+          "content": "Hello, how are you?"
+        }
+      ],
+      "temperature": 0.7,
+      "max_tokens": 1000
+    },
+    "universal": {
+      "_original": {
+        "provider": "openai",
+        "raw": {
+          "model": "gpt-4",
+          "messages": [
+            {
+              "role": "system",
+              "content": "You are a helpful assistant"
+            },
+            {
+              "role": "user",
+              "content": "Hello, how are you?"
+            }
+          ],
+          "temperature": 0.7,
+          "max_tokens": 1000
+        }
+      },
+      "max_tokens": 1000,
+      "messages": [
+        {
+          "content": [
+            {
+              "_original": {
+                "provider": "openai",
+                "raw": "Hello, how are you?"
+              },
+              "text": "Hello, how are you?",
+              "type": "text"
+            }
+          ],
+          "id": "msg_1761769213582_uu2ui6",
+          "metadata": {
+            "originalIndex": 0,
+            "provider": "openai"
+          },
+          "role": "user"
+        }
+      ],
+      "model": "gpt-4",
+      "provider": "openai",
+      "provider_params": {},
+      "system": "You are a helpful assistant",
+      "temperature": 0.7
+    },
+    "roundtrip": {
+      "max_tokens": 1000,
+      "messages": [
+        {
+          "content": "You are a helpful assistant",
+          "role": "system"
+        },
+        {
+          "role": "user",
+          "content": "Hello, how are you?"
+        }
+      ],
+      "model": "gpt-4",
+      "temperature": 0.7
+    }
+  },
+  "openai_multimodal": {
+    "provider": "openai",
+    "input": {
+      "model": "gpt-4-vision-preview",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "What is in this image?"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/jpeg;base64,abc123def456",
+                "detail": "high"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "universal": {
+      "_original": {
+        "provider": "openai",
+        "raw": {
+          "model": "gpt-4-vision-preview",
+          "messages": [
+            {
+              "role": "user",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "What is in this image?"
+                },
+                {
+                  "type": "image_url",
+                  "image_url": {
+                    "url": "data:image/jpeg;base64,abc123def456",
+                    "detail": "high"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "messages": [
+        {
+          "content": [
+            {
+              "_original": {
+                "provider": "openai",
+                "raw": {
+                  "type": "text",
+                  "text": "What is in this image?"
+                }
+              },
+              "text": "What is in this image?",
+              "type": "text"
+            },
+            {
+              "_original": {
+                "provider": "openai",
+                "raw": {
+                  "type": "image_url",
+                  "image_url": {
+                    "url": "data:image/jpeg;base64,abc123def456",
+                    "detail": "high"
+                  }
+                }
+              },
+              "media": {
+                "detail": "high",
+                "url": "data:image/jpeg;base64,abc123def456",
+                "mimeType": "image/jpeg",
+                "data": "abc123def456"
+              },
+              "type": "image"
+            }
+          ],
+          "id": "msg_1761769213587_mqgvj",
+          "metadata": {
+            "originalIndex": 0,
+            "provider": "openai"
+          },
+          "role": "user"
+        }
+      ],
+      "model": "gpt-4-vision-preview",
+      "provider": "openai",
+      "provider_params": {}
+    },
+    "roundtrip": {
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "What is in this image?"
+            },
+            {
+              "type": "image_url",
+              "image_url": {
+                "url": "data:image/jpeg;base64,abc123def456",
+                "detail": "high"
+              }
+            }
+          ]
+        }
+      ],
+      "model": "gpt-4-vision-preview"
+    }
+  },
+  "anthropic_basic": {
+    "provider": "anthropic",
+    "input": {
+      "model": "claude-3-opus-20240229",
+      "max_tokens": 1024,
+      "system": "You are a helpful assistant",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Hello!"
+        }
+      ],
+      "temperature": 0.7
+    },
+    "universal": {
+      "_original": {
+        "provider": "anthropic",
+        "raw": {
+          "model": "claude-3-opus-20240229",
+          "max_tokens": 1024,
+          "system": "You are a helpful assistant",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Hello!"
+            }
+          ],
+          "temperature": 0.7
+        }
+      },
+      "max_tokens": 1024,
+      "messages": [
+        {
+          "content": [
+            {
+              "_original": {
+                "provider": "anthropic",
+                "raw": "Hello!"
+              },
+              "text": "Hello!",
+              "type": "text"
+            }
+          ],
+          "id": "msg_1761769213588_m1lqvg",
+          "metadata": {
+            "originalIndex": 0,
+            "provider": "anthropic"
+          },
+          "role": "user"
+        }
+      ],
+      "model": "claude-3-opus-20240229",
+      "provider": "anthropic",
+      "provider_params": {},
+      "system": "You are a helpful assistant",
+      "temperature": 0.7
+    },
+    "roundtrip": {
+      "max_tokens": 1024,
+      "messages": [
+        {
+          "content": [
+            {
+              "text": "Hello!",
+              "type": "text"
+            }
+          ],
+          "role": "user"
+        }
+      ],
+      "model": "claude-3-opus-20240229",
+      "temperature": 0.7,
+      "system": "You are a helpful assistant"
+    }
+  },
+  "anthropic_multimodal": {
+    "provider": "anthropic",
+    "input": {
+      "model": "claude-3-opus-20240229",
+      "max_tokens": 1024,
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "What is in this image?"
+            },
+            {
+              "type": "image",
+              "source": {
+                "type": "base64",
+                "media_type": "image/jpeg",
+                "data": "abc123def456"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "universal": {
+      "_original": {
+        "provider": "anthropic",
+        "raw": {
+          "model": "claude-3-opus-20240229",
+          "max_tokens": 1024,
+          "messages": [
+            {
+              "role": "user",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "What is in this image?"
+                },
+                {
+                  "type": "image",
+                  "source": {
+                    "type": "base64",
+                    "media_type": "image/jpeg",
+                    "data": "abc123def456"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "max_tokens": 1024,
+      "messages": [
+        {
+          "content": [
+            {
+              "_original": {
+                "provider": "anthropic",
+                "raw": {
+                  "type": "text",
+                  "text": "What is in this image?"
+                }
+              },
+              "text": "What is in this image?",
+              "type": "text"
+            },
+            {
+              "_original": {
+                "provider": "anthropic",
+                "raw": {
+                  "type": "image",
+                  "source": {
+                    "type": "base64",
+                    "media_type": "image/jpeg",
+                    "data": "abc123def456"
+                  }
+                }
+              },
+              "media": {
+                "data": "abc123def456",
+                "mimeType": "image/jpeg"
+              },
+              "type": "image"
+            }
+          ],
+          "id": "msg_1761769213588_q5hpy",
+          "metadata": {
+            "originalIndex": 0,
+            "provider": "anthropic"
+          },
+          "role": "user"
+        }
+      ],
+      "model": "claude-3-opus-20240229",
+      "provider": "anthropic",
+      "provider_params": {}
+    },
+    "roundtrip": {
+      "max_tokens": 1024,
+      "messages": [
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "What is in this image?"
+            },
+            {
+              "type": "image",
+              "source": {
+                "type": "base64",
+                "media_type": "image/jpeg",
+                "data": "abc123def456"
+              }
+            }
+          ],
+          "role": "user"
+        }
+      ],
+      "model": "claude-3-opus-20240229"
+    }
+  },
+  "google_basic": {
+    "provider": "google",
+    "input": {
+      "contents": [
+        {
+          "role": "user",
+          "parts": [
+            {
+              "text": "Hello!"
+            }
+          ]
+        }
+      ],
+      "generationConfig": {
+        "temperature": 0.7,
+        "maxOutputTokens": 1000
+      }
+    },
+    "universal": {
+      "_original": {
+        "provider": "google",
+        "raw": {
+          "contents": [
+            {
+              "role": "user",
+              "parts": [
+                {
+                  "text": "Hello!"
+                }
+              ]
+            }
+          ],
+          "generationConfig": {
+            "temperature": 0.7,
+            "maxOutputTokens": 1000
+          }
+        }
+      },
+      "max_tokens": 1000,
+      "messages": [
+        {
+          "content": [
+            {
+              "_original": {
+                "provider": "google",
+                "raw": {
+                  "text": "Hello!"
+                }
+              },
+              "text": "Hello!",
+              "type": "text"
+            }
+          ],
+          "id": "msg_1761769213589_gqwti8",
+          "metadata": {
+            "originalIndex": 0,
+            "parts_metadata": [
+              {
+                "text": "Hello!"
+              }
+            ],
+            "provider": "google"
+          },
+          "role": "user"
+        }
+      ],
+      "model": "gemini-pro",
+      "provider": "google",
+      "provider_params": {
+        "generation_config": {
+          "temperature": 0.7,
+          "maxOutputTokens": 1000
+        }
+      },
+      "stream": false,
+      "temperature": 0.7
+    },
+    "roundtrip": {
+      "contents": [
+        {
+          "parts": [
+            {
+              "text": "Hello!"
+            }
+          ],
+          "role": "user"
+        }
+      ],
+      "generationConfig": {
+        "maxOutputTokens": 1000,
+        "temperature": 0.7
+      }
+    }
+  },
+  "google_multimodal": {
+    "provider": "google",
+    "input": {
+      "contents": [
+        {
+          "role": "user",
+          "parts": [
+            {
+              "text": "What is in this image?"
+            },
+            {
+              "inlineData": {
+                "mimeType": "image/jpeg",
+                "data": "abc123def456"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "universal": {
+      "_original": {
+        "provider": "google",
+        "raw": {
+          "contents": [
+            {
+              "role": "user",
+              "parts": [
+                {
+                  "text": "What is in this image?"
+                },
+                {
+                  "inlineData": {
+                    "mimeType": "image/jpeg",
+                    "data": "abc123def456"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "messages": [
+        {
+          "content": [
+            {
+              "_original": {
+                "provider": "google",
+                "raw": {
+                  "text": "What is in this image?"
+                }
+              },
+              "text": "What is in this image?",
+              "type": "text"
+            },
+            {
+              "_original": {
+                "provider": "google",
+                "raw": {
+                  "inlineData": {
+                    "mimeType": "image/jpeg",
+                    "data": "abc123def456"
+                  }
+                }
+              },
+              "media": {
+                "data": "abc123def456",
+                "mimeType": "image/jpeg"
+              },
+              "type": "image"
+            }
+          ],
+          "id": "msg_1761769213589_gevj7",
+          "metadata": {
+            "originalIndex": 0,
+            "parts_metadata": [
+              {
+                "text": "What is in this image?"
+              },
+              {
+                "inlineData": {
+                  "mimeType": "image/jpeg",
+                  "data": "abc123def456"
+                }
+              }
+            ],
+            "provider": "google"
+          },
+          "role": "user"
+        }
+      ],
+      "model": "gemini-pro",
+      "provider": "google",
+      "provider_params": {},
+      "stream": false
+    },
+    "roundtrip": {
+      "contents": [
+        {
+          "parts": [
+            {
+              "text": "What is in this image?"
+            },
+            {
+              "inlineData": {
+                "data": "abc123def456",
+                "mimeType": "image/jpeg"
+              }
+            }
+          ],
+          "role": "user"
+        }
+      ]
+    }
+  }
+}
